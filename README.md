@@ -1,8 +1,10 @@
-# JSON & XML Toolkit
+<p align="center">
+  <img src="media/icon.png" alt="JSON & XML Toolkit" width="128" height="128" />
+</p>
+
+<h1 align="center">JSON & XML Toolkit</h1>
 
 A complete **data workbench** for JSON and XML inside VS Code. Most extensions do *one* thing — format, or flatten, or convert. This one bundles the whole toolbox a developer or data analyst reaches for every day, plus an **interactive Workbench panel** you won't find elsewhere.
-
-![icon](media/icon.png)
 
 ## Why this one?
 
