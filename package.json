@@ -1,0 +1,385 @@
+{
+  "name": "json-xml-toolkit",
+  "displayName": "JSON & XML Toolkit",
+  "description": "A complete workbench for JSON & XML: prettify, minify, escape, repair, sort, flatten, query (JSONPath/XPath), analyze, and convert between JSON, XML, YAML, CSV, TypeScript and Go — all from the command palette or an interactive panel.",
+  "version": "1.1.0",
+  "publisher": "BerkeKaracaoglan",
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Programming Languages",
+    "Data Science",
+    "Other"
+  ],
+  "keywords": [
+    "json",
+    "xml",
+    "yaml",
+    "csv",
+    "formatter",
+    "prettify",
+    "minify",
+    "escape",
+    "jsonpath",
+    "xpath",
+    "flatten",
+    "convert",
+    "typescript",
+    "repair",
+    "toolkit"
+  ],
+  "galleryBanner": {
+    "color": "#1e1b4b",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karacaoglanberke/json-xml-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karacaoglanberke/json-xml-toolkit/issues"
+  },
+  "homepage": "https://github.com/karacaoglanberke/json-xml-toolkit#readme",
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonXmlToolkit.openPanel",
+        "title": "Open Toolkit Workbench",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.openPanelWithSelection",
+        "title": "Send Selection to Toolkit Workbench",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.prettify",
+        "title": "JSON: Prettify (Format)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.minify",
+        "title": "JSON: Minify",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.sortKeys",
+        "title": "JSON: Sort Keys",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.escape",
+        "title": "JSON: Escape String",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.unescape",
+        "title": "JSON: Unescape String",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.stringify",
+        "title": "JSON: Stringify (Wrap as String)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.parse",
+        "title": "JSON: Parse (Unwrap String)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.repair",
+        "title": "JSON: Repair / Fix",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.flatten",
+        "title": "JSON: Flatten (dot notation)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.unflatten",
+        "title": "JSON: Unflatten",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.removeEmpty",
+        "title": "JSON: Remove Null & Empty Values",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.unicodeEscape",
+        "title": "JSON: Escape Unicode (\\uXXXX)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.unicodeUnescape",
+        "title": "JSON: Decode Unicode (\\uXXXX)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.query",
+        "title": "JSON: Query (JSONPath)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.stats",
+        "title": "JSON: Analyze (Stats)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.prettify",
+        "title": "XML: Prettify (Format)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.minify",
+        "title": "XML: Minify",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.escape",
+        "title": "XML: Escape",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.unescape",
+        "title": "XML: Unescape",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.query",
+        "title": "XML: Query (XPath)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.xml.stats",
+        "title": "XML: Analyze (Stats)",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToYaml",
+        "title": "Convert: JSON → YAML",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.yamlToJson",
+        "title": "Convert: YAML → JSON",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToXml",
+        "title": "Convert: JSON → XML",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.xmlToJson",
+        "title": "Convert: XML → JSON",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToCsv",
+        "title": "Convert: JSON → CSV",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.csvToJson",
+        "title": "Convert: CSV → JSON",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToTypeScript",
+        "title": "Convert: JSON → TypeScript",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToGo",
+        "title": "Convert: JSON → Go struct",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToProto",
+        "title": "Convert: JSON → Protobuf",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.convert.jsonToPython",
+        "title": "Convert: JSON → Python dataclass",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.json.validateSchema",
+        "title": "JSON: Validate against Schema",
+        "category": "JSON & XML Toolkit"
+      },
+      {
+        "command": "jsonXmlToolkit.diff",
+        "title": "Diff (Semantic) with Another Document",
+        "category": "JSON & XML Toolkit"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "jsonXmlToolkit.contextSubmenu",
+          "group": "1_modification",
+          "when": "editorHasSelection || resourceLangId == json || resourceLangId == jsonc || resourceLangId == xml || resourceLangId == yaml"
+        }
+      ],
+      "jsonXmlToolkit.contextSubmenu": [
+        {
+          "command": "jsonXmlToolkit.json.prettify",
+          "group": "1_format@1"
+        },
+        {
+          "command": "jsonXmlToolkit.json.minify",
+          "group": "1_format@2"
+        },
+        {
+          "command": "jsonXmlToolkit.json.sortKeys",
+          "group": "1_format@3"
+        },
+        {
+          "command": "jsonXmlToolkit.json.repair",
+          "group": "1_format@4"
+        },
+        {
+          "command": "jsonXmlToolkit.json.escape",
+          "group": "2_string@1"
+        },
+        {
+          "command": "jsonXmlToolkit.json.unescape",
+          "group": "2_string@2"
+        },
+        {
+          "command": "jsonXmlToolkit.json.query",
+          "group": "3_query@1"
+        },
+        {
+          "command": "jsonXmlToolkit.json.validateSchema",
+          "group": "3_query@2"
+        },
+        {
+          "command": "jsonXmlToolkit.diff",
+          "group": "3_query@3"
+        },
+        {
+          "command": "jsonXmlToolkit.convert.jsonToYaml",
+          "group": "4_convert@1"
+        },
+        {
+          "command": "jsonXmlToolkit.convert.jsonToTypeScript",
+          "group": "4_convert@2"
+        },
+        {
+          "command": "jsonXmlToolkit.xml.prettify",
+          "group": "5_xml@1"
+        },
+        {
+          "command": "jsonXmlToolkit.convert.xmlToJson",
+          "group": "5_xml@2"
+        },
+        {
+          "command": "jsonXmlToolkit.openPanelWithSelection",
+          "group": "9_panel@1"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "jsonXmlToolkit.contextSubmenu",
+        "label": "JSON & XML Toolkit"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "jsonXmlToolkit.tree",
+          "name": "JSON Structure",
+          "icon": "$(json)",
+          "when": "resourceLangId == json || resourceLangId == jsonc"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "jsonXmlToolkit.openPanel",
+        "key": "ctrl+alt+j",
+        "mac": "cmd+alt+j"
+      }
+    ],
+    "configuration": {
+      "title": "JSON & XML Toolkit",
+      "properties": {
+        "jsonXmlToolkit.indent": {
+          "type": "string",
+          "enum": [
+            "2",
+            "4",
+            "tab"
+          ],
+          "default": "2",
+          "description": "Indentation used when prettifying JSON, XML and YAML."
+        },
+        "jsonXmlToolkit.sortDirection": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "default": "asc",
+          "description": "Default direction when sorting JSON keys."
+        },
+        "jsonXmlToolkit.statusBar.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a status-bar item with live validity, size and depth for the active JSON/XML document."
+        },
+        "jsonXmlToolkit.repair.useJson5": {
+          "type": "boolean",
+          "default": true,
+          "description": "Allow JSON5 syntax (comments, trailing commas, single quotes, unquoted keys) when repairing JSON."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node esbuild.js --production",
+    "watch": "node esbuild.js --watch",
+    "compile": "tsc --noEmit",
+    "test": "node --test --import tsx ./src/core/*.test.ts",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.21.5",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "fast-xml-parser": "^4.4.0",
+    "js-yaml": "^4.1.0",
+    "json5": "^2.2.3",
+    "jsonc-parser": "^3.3.1",
+    "jsonpath-plus": "^9.0.0",
+    "xpath": "^0.0.34",
+    "@xmldom/xmldom": "^0.8.10"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "esbuild@0.28.1": true
+  }
+}
