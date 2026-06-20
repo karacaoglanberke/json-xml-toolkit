@@ -34,14 +34,30 @@ A complete **data workbench** for JSON and XML inside VS Code. Most extensions d
 | Analyze | Depth, key counts, type breakdown, byte size |
 
 ### XML
-Prettify, Minify, Escape, Unescape, **Query (XPath)**, and Analyze (elements, attributes, depth, unique tags).
+| Command | What it does |
+| --- | --- |
+| Prettify / Minify | Format with configurable indent, or compact to one line |
+| Escape / Unescape | Convert to/from XML entities (`&lt;`, `&amp;`, …) |
+| Query (XPath) | Run an XPath expression and collect matching nodes |
+| Analyze | Elements, attributes, depth, and unique-tag counts |
 
 ### Convert
-JSON ⇄ YAML · JSON ⇄ XML · JSON ⇄ CSV · **JSON → TypeScript interfaces** · **JSON → Go structs** · **JSON → Protobuf (proto3)** · **JSON → Python dataclasses**.
+| Command | What it does |
+| --- | --- |
+| JSON → YAML / YAML → JSON | Round-trip between JSON and YAML |
+| JSON → XML / XML → JSON | Round-trip between JSON and XML |
+| JSON → CSV / CSV → JSON | Tabular round-trip with proper quoting and type coercion |
+| JSON → TypeScript | Generate `interface` definitions from a sample |
+| JSON → Go struct | Generate Go structs with `json:` tags |
+| JSON → Protobuf | Generate `proto3` message definitions |
+| JSON → Python dataclass | Generate `@dataclass` classes with type hints |
 
 ### Inspect
-- **Diff (Semantic)** — compare the active document with another open file or a file you pick. Both sides are normalized (sorted keys, consistent formatting) first, so only meaningful differences appear in the native diff editor.
-- **JSON Structure tree** — appears in the Explorer for JSON files; expand to navigate and click a node to reveal it in the editor.
+| Command | What it does |
+| --- | --- |
+| Diff (Semantic) | Compare the active document with another file; both sides are normalized (sorted keys, consistent formatting) first, so only meaningful differences show |
+| JSON Structure tree | An expandable outline in the Explorer for JSON files; click a node to reveal it in the editor (lazy, so it stays fast on large files) |
+| Status bar | Live validity, size, depth and key/element counts for the active JSON/XML file |
 
 ## Usage
 
