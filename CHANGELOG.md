@@ -2,6 +2,11 @@
 
 All notable changes to the **JSON & XML Toolkit** extension are documented here.
 
+## [1.1.1] - 2026-06-21
+
+### Fixed
+- Extension failed to activate (`command '…' not found` for every command) because the bundler pulled in `jsonc-parser`'s UMD build, whose dynamic `require("./impl/…")` calls could not be resolved at runtime. esbuild now prefers each dependency's ESM entry (`mainFields: ['module', 'main']`), so the bundle loads and all commands register correctly.
+
 ## [1.1.0] - 2026-06-21
 
 ### Added

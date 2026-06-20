@@ -94,7 +94,7 @@ The only addresses you may spot inside the bundle are *identifier strings* (e.g.
 
 ```bash
 npm install
-npm run build      # bundles to dist/ and regenerates the icon
+npm run build      # bundles the extension to dist/
 npm test           # runs the core unit tests
 npm run package    # produces a .vsix
 ```
