@@ -2,6 +2,11 @@
 
 All notable changes to the **JSON & XML Toolkit** extension are documented here.
 
+## [1.1.2] - 2026-06-21
+
+### Fixed
+- **Definitive activation fix.** Dependencies are no longer bundled into a single file. esbuild now bundles only the extension's own source (`packages: 'external'`) and the npm dependencies ship inside the `.vsix` as `node_modules`, so VS Code's own module loader runs each package exactly as published. This eliminates the entire class of bundler-vs-dynamic-`require()` failures (the `1.1.0`/`1.1.1` activation crash) rather than patching one package at a time.
+
 ## [1.1.1] - 2026-06-21
 
 ### Fixed

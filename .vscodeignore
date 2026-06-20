@@ -1,7 +1,7 @@
 .vscode/**
 .github/**
 src/**
-node_modules/**
+scripts/**
 **/*.test.ts
 **/*.map
 esbuild.js

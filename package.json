@@ -2,7 +2,7 @@
   "name": "json-xml-toolkit",
   "displayName": "JSON & XML Toolkit",
   "description": "A complete workbench for JSON & XML: prettify, minify, escape, repair, sort, flatten, query (JSONPath/XPath), analyze, and convert between JSON, XML, YAML, CSV, TypeScript and Go — all from the command palette or an interactive panel.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "BerkeKaracaoglan",
   "license": "MIT",
   "icon": "media/icon.png",
@@ -352,12 +352,13 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run build",
+    "vscode:prepublish": "npm run build && npm run verify",
     "build": "node esbuild.js --production",
     "watch": "node esbuild.js --watch",
     "compile": "tsc --noEmit",
+    "verify": "node scripts/verify-activation.js",
     "test": "node --test --import tsx ./src/core/*.test.ts",
-    "package": "vsce package --no-dependencies"
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",

@@ -14,11 +14,12 @@ async function main() {
     platform: 'node',
     target: 'node18',
     outfile: 'dist/extension.js',
+    // Bundle ONLY our own source. All npm dependencies stay external and are
+    // shipped inside the .vsix as node_modules, so VS Code's own loader runs
+    // each package exactly as published. This avoids the whole class of
+    // bundler-vs-dynamic-require() breakage (e.g. jsonc-parser's UMD build).
+    packages: 'external',
     external: ['vscode'],
-    // Prefer the ESM ("module") entry of dependencies so packages like
-    // jsonc-parser are bundled from their statically-analyzable ESM build
-    // instead of a UMD wrapper that uses unresolved dynamic require() calls.
-    mainFields: ['module', 'main'],
     logLevel: 'info'
   });
 
