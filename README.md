@@ -8,7 +8,7 @@ A complete **data workbench** for JSON and XML inside VS Code. Most extensions d
 
 ## Why this one?
 
-- **100% offline & private** — every operation runs locally in memory. The extension makes **no network requests** and sends **no telemetry**; your data never leaves your machine. See [Privacy](#privacy--offline).
+- **100% offline & private** — every operation runs locally in memory. The extension makes **no network requests** and sends **no telemetry**; your data never leaves your machine. See [Privacy](#privacy).
 - **One extension, the full toolkit** — 35+ operations for JSON *and* XML, instead of installing five single-purpose extensions.
 - **Interactive Workbench** (`Ctrl/Cmd+Alt+J`) — a two-pane scratchpad with live format auto-detection. Paste, transform, query, and pipe the output straight back into your editor or a new document. No round-tripping through a website.
 - **Structure tree** — an expandable outline of the active JSON document in the Explorer; click any node to jump to it. Lazy, so it stays fast on big files.
@@ -77,7 +77,7 @@ In-place transforms (prettify, minify, sort, escape, repair…) rewrite the sele
 | `jsonXmlToolkit.statusBar.enabled` | `true` | Show the live status-bar info item. |
 | `jsonXmlToolkit.repair.useJson5` | `true` | Accept JSON5 syntax when repairing. |
 
-## Privacy & Offline
+## Privacy
 
 **Your data never leaves your machine.** Every transformation, query, conversion and validation runs entirely in-process, on your local device.
 
