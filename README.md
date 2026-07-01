@@ -1,23 +1,58 @@
 <p align="center">
-  <img src="media/icon.png" alt="JSON & XML Toolkit" width="128" height="128" />
+  <img src="https://raw.githubusercontent.com/karacaoglanberke/json-xml-toolkit/main/media/icon.png" alt="JSON & XML Toolkit" width="128" height="128" />
 </p>
 
-<h1 align="center">JSON & XML Toolkit</h1>
+<h1 align="center">JSON &amp; XML Toolkit</h1>
 
-A complete **data workbench** for JSON and XML inside VS Code. Most extensions do *one* thing — format, or flatten, or convert. This one bundles the whole toolbox a developer or data analyst reaches for every day, plus an **interactive Workbench panel** you won't find elsewhere.
+<p align="center">
+  <strong>The whole JSON &amp; XML toolbox in a single extension — 50+ operations, an interactive Workbench, and 100% offline.</strong>
+</p>
 
-## Why this one?
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/v/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Marketplace&color=1e1b4b" alt="Marketplace Version" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/i/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Installs&color=1e1b4b" alt="Installs" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/r/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Rating&color=1e1b4b" alt="Rating" /></a>
+  <a href="https://github.com/karacaoglanberke/json-xml-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1e1b4b?style=flat-square" alt="License: MIT" /></a>
+</p>
 
-- **100% offline & private** — every operation runs locally in memory. The extension makes **no network requests** and sends **no telemetry**; your data never leaves your machine. See [Privacy](#privacy).
-- **One extension, the full toolkit** — 35+ operations for JSON *and* XML, instead of installing five single-purpose extensions.
-- **Interactive Workbench** (`Ctrl/Cmd+Alt+J`) — a two-pane scratchpad with live format auto-detection. Paste, transform, query, and pipe the output straight back into your editor or a new document. No round-tripping through a website.
-- **Structure tree** — an expandable outline of the active JSON document in the Explorer; click any node to jump to it. Lazy, so it stays fast on big files.
-- **Schema validation & semantic diff** — validate against any JSON Schema with inline error markers, and diff two documents *after* normalizing formatting and key order so only real changes show.
-- **Works on a selection or the whole file** — every command transforms the selected text, or the entire document if nothing is selected.
-- **Lenient by default** — comments, trailing commas, single quotes and unquoted keys are accepted (JSON5) so messy real-world data just works.
-- **Live status bar** — validity, size, depth and key/element counts for the active JSON/XML file at a glance.
+Stop installing five single-purpose extensions. **JSON & XML Toolkit** bundles the entire
+data-wrangling toolbox — prettify, minify, sort, repair, flatten, query, validate, diff and
+convert — for **both** JSON and XML, plus an **interactive Workbench** you won't find anywhere
+else. Everything runs locally, in memory: **no network requests, no telemetry, ever.**
 
-## Features
+<!--
+  📸 TODO — add a hero demo here before publishing.
+  Record a short GIF of the Workbench panel (Ctrl/Cmd+Alt+J): paste messy JSON on the left,
+  prettify/convert on the right, pipe back to the editor. Save it to media/ and reference it
+  with an ABSOLUTE raw-GitHub URL so it renders on the Marketplace, e.g.:
+
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/karacaoglanberke/json-xml-toolkit/main/media/demo.gif" alt="Workbench demo" />
+  </p>
+-->
+
+## ✨ Why this one?
+
+- 🔒 **100% offline & private** — every operation runs locally in memory. No network calls, no telemetry; your data never leaves your machine. See [Privacy](#-privacy).
+- 🧰 **One extension, 50+ operations** — the full JSON *and* XML toolkit, instead of five single-purpose add-ons.
+- ⚡ **Interactive Workbench** (`Ctrl/Cmd+Alt+J`) — a two-pane scratchpad with live format auto-detection. Paste, transform, query, and pipe the result straight back into your editor.
+- 🌳 **Structure tree** — an expandable outline of the active JSON document in the Explorer; click any node to jump to it. Lazy-loaded, so it stays fast on big files.
+- ✅ **Schema validation & semantic diff** — validate against any JSON Schema with inline error markers, and diff two documents *after* normalizing formatting and key order so only real changes show.
+- 🎯 **Selection or whole file** — every command transforms your selection, or the entire document when nothing is selected.
+- 🩹 **Lenient by default** — comments, trailing commas, single quotes and unquoted keys are accepted (JSON5), so messy real-world data just works.
+- 📊 **Live status bar** — validity, size, depth and key/element counts for the active JSON/XML file at a glance.
+
+## 🚀 Getting started
+
+1. **Open the Workbench** — press `Ctrl/Cmd+Alt+J` (or right-click → *Send Selection to Toolkit Workbench*) to paste, transform and pipe data back out.
+2. **Command Palette** — `Ctrl/Cmd+Shift+P` → type `JSON & XML Toolkit` to browse every command.
+3. **Right-click** — in any JSON/XML/YAML file, use the **JSON & XML Toolkit** submenu for the common ones.
+
+> In-place transforms (prettify, minify, sort, escape, repair…) rewrite your selection. Conversions and queries open the result in a fresh editor, so your source stays intact.
+
+## 🧩 Features
+
+Fifty commands, one palette. Everything below works on a selection or the whole document.
 
 ### JSON
 | Command | What it does |
@@ -60,15 +95,7 @@ A complete **data workbench** for JSON and XML inside VS Code. Most extensions d
 | JSON Structure tree | An expandable outline in the Explorer for JSON files; click a node to reveal it in the editor (lazy, so it stays fast on large files) |
 | Status bar | Live validity, size, depth and key/element counts for the active JSON/XML file |
 
-## Usage
-
-- **Command Palette** (`Ctrl/Cmd+Shift+P`) → type `JSON & XML Toolkit` to see every command.
-- **Right-click** in a JSON/XML/YAML file → **JSON & XML Toolkit** submenu for the common ones.
-- **Workbench panel** → `Ctrl/Cmd+Alt+J`, or right-click → *Send Selection to Toolkit Workbench*.
-
-In-place transforms (prettify, minify, sort, escape, repair…) rewrite the selection. Conversions and queries open the result in a fresh editor so your source stays intact.
-
-## Settings
+## ⚙️ Settings
 
 | Setting | Default | Description |
 | --- | --- | --- |
@@ -77,20 +104,23 @@ In-place transforms (prettify, minify, sort, escape, repair…) rewrite the sele
 | `jsonXmlToolkit.statusBar.enabled` | `true` | Show the live status-bar info item. |
 | `jsonXmlToolkit.repair.useJson5` | `true` | Accept JSON5 syntax when repairing. |
 
-## Privacy
+## 🔒 Privacy
 
-**Your data never leaves your machine.** Every transformation, query, conversion and validation runs entirely in-process, on your local device.
+**Your data never leaves your machine.** Every transformation, query, conversion and validation
+runs entirely in-process, on your local device.
 
 - 🔌 **No network access** — the extension contains no `fetch`, `XMLHttpRequest`, `WebSocket`, or `http`/`https`/`net`/`dns` calls. It works fully offline (airplane mode, air-gapped machines).
 - 🔒 **No telemetry, no tracking** — nothing about your documents or usage is collected or sent anywhere.
 - 🧱 **Locked-down panel** — the Workbench webview runs under a strict Content-Security-Policy (`default-src 'none'`) that blocks any outbound connection at the browser level.
 - 📄 **Schema validation stays local** — schemas are read from your own files and compiled synchronously; remote `$ref`s are **never fetched** (validation fails closed instead of reaching out).
 
-The only addresses you may spot inside the bundle are *identifier strings* (e.g. JSON Schema `$id`s and XML namespace URIs) that are never contacted.
+The only addresses you may spot inside the bundle are *identifier strings* (e.g. JSON Schema
+`$id`s and XML namespace URIs) that are never contacted.
 
-> Note: VS Code's own telemetry is separate and controlled by your `telemetry.telemetryLevel` setting — this extension adds nothing to it.
+> Note: VS Code's own telemetry is separate and controlled by your `telemetry.telemetryLevel`
+> setting — this extension adds nothing to it.
 
-## Building from source
+## 🛠️ Building from source
 
 ```bash
 npm install
@@ -101,6 +131,6 @@ npm run package    # produces a .vsix
 
 > **Publishing:** set `publisher` in `package.json` to your [Marketplace publisher id](https://code.visualstudio.com/api/working-with-extensions/publishing-extension), then `vsce publish`.
 
-## License
+## 📄 License
 
 MIT © contributors
