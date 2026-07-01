@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/v/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Marketplace&color=1e1b4b" alt="Marketplace Version" /></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/i/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Installs&color=1e1b4b" alt="Installs" /></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://img.shields.io/visual-studio-marketplace/r/BerkeKaracaoglan.json-xml-toolkit?style=flat-square&label=Rating&color=1e1b4b" alt="Rating" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://vsmarketplacebadges.dev/version/BerkeKaracaoglan.json-xml-toolkit.png?style=flat-square&label=Marketplace&color=1e1b4b" alt="Marketplace Version" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://vsmarketplacebadges.dev/installs/BerkeKaracaoglan.json-xml-toolkit.png?style=flat-square&label=Installs&color=1e1b4b" alt="Installs" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=BerkeKaracaoglan.json-xml-toolkit"><img src="https://vsmarketplacebadges.dev/rating-star/BerkeKaracaoglan.json-xml-toolkit.png?style=flat-square&label=Rating&color=1e1b4b" alt="Rating" /></a>
   <a href="https://github.com/karacaoglanberke/json-xml-toolkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1e1b4b?style=flat-square" alt="License: MIT" /></a>
 </p>
 
